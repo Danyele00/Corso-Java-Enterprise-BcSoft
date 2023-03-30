@@ -1,0 +1,149 @@
+--- DOMANDE TEORICHE --
+
+1- Che cos'è una variabile?
+
+Una variabile e' una locazione di memoria per la memorizzazione dei dati. 
+In Java una variabile deve avere un tipo, che puo' essere primitivo o referenziale. 
+
+2- Che cos'è un package?
+
+Il package è la struttura fisica del progetto. Ogni package raggruppa classi che possono essere richiamate
+da classi di altri package usando la keyword "import".
+
+3- Che cos'è una classe?
+
+La classe è un costrutto nonchè il modello principale in java per la rappresentazione astratta di oggetti e operazioni.  
+
+4- Che cos'è un oggetto?
+
+Un oggetto e' l'istanza della classe che rende concreta la rappresentazione astratta di partenza. Ogni oggetto ha la possibilità di 
+ricevere, elaborare, memorizzare informazioni che possono essere gestite in conbinazione di altri oggetti con delle azioni.
+
+5- Cosa si intende per istanza?
+
+Con instanza si intende la creazione fisica in memoria dell'oggetto cui viene assegnato un indirizzo di memoria univoco di una classe.
+L'istanzazione avviene con la keyword "new" seguita dal metodo costruttore della classe. 
+
+6- Che cos’è un costruttore?
+
+Il costruttore è un metodoto di un classe che ha il compito specifico di creare una nuova istanza. Ogni classe puo' avere diversi costruttori 
+in base ai dati forniti come parametri richiamati in base alle esigenze.
+
+7- Che cos’è un metodo e a cosa serve?
+
+Un metodo e' un blocco di codice riutilizzabile in altre parti di codice mediante una chiamata. Ogni metodo ha:
+ - una visibiltà: public o private, 
+ - un ritorno: void o un tipo di dato (primitivo o reference) restituto dal metodo con la keyword "return",      
+ - un corpo di codice racchiuso tra {}
+Opzionali si puo' sceglere di rendere un metodo static o di passare dei parametri come argomenti. 
+Un metodo sara' poi l'azione che una classe puo' fare.
+
+8- Che cos’è un attributo e a cosa serve?
+
+Un attributo e' una variabile di una classe che contiene informazioni per definire le proprieta' dell'oggetto.
+Insieme ai metodi e' possibile rappresentare in Classe ogni oggetto del mondo reale mediante proprieta'(attributi) e comportamenti(metodi)
+
+9- Che cos’è un linguaggio di programmazione?
+
+Il linguaggio di programmazione e' una struttura sintattica che permette al programmatore di poter comunicare con la macchina.
+Mediante l'uso di istruzioni scritte dal programmatore che devono essere poi tradotte in linguaggio macchina. 
+
+10- Che differenza c’è tra linguaggio compilato e interpretato?
+
+Un linguaggio compilato trasforma prima il suo codice in bytecode e poi crea un file eseguibile non necessariamente .exe
+Un linguaggio interpretato ha bisogno di un programma esterno che esegue riga per riga il codice sorgente. 
+
+11- Cosa sono i tipi di dato?
+
+I tipi di dato identificano le variabili nel mondo reale. Posso essere primitivi o reference. I tipi primitivi per rappresentare valori semplici come 
+numeri, caratteri, valori booleani. I tipi reference per rappresentare oggetti complessi che saranno allocati in memoria. Una variabile di tipo reference al suo interno 
+contiene l'indirizzo di memoria che fa riferimento.   
+
+
+12- Cosa sono JDK, JRE, JVM e a cosa servono?
+
+LA JDK (Java Development Kit) e' l'insieme di strumenti base che permettono al programmatore di poter scrivere, compilare ed eseguire i programmi.
+LA JRE (Java Runtime Enviroment) e' un ambiente che permette l'esecuzione effettiva dei programmi.
+LA JVM (Java Virtual Machine) e' una macchina virtuale che permette a qualsiasi device di eseguire un programma Java
+
+
+13- Elenca le principali caratteristiche di Java.
+
+Le principali caratteristiche di Java sono:
+- è un linguaggio orientato ad oggetti (OOP) basato su classi oggetti e metodi
+- è un linguaggio tipizzato (tutte le variabili devono avere un tipo di dato al momento della creazione)
+- è un linguaggio con forte robustezza, con la capacita' di prevenire e gestire gli errori senza interrompere l'esecuzione
+- è un linguaggio che dispone di librerie standard gia' scritte;
+- è un linguaggio che grazie alla JVM garantisce un indipendenza della piattaforma;
+
+
+14 - Che cos’è e a cosa serve scrivere “new”?
+
+La keyword "new" viene utilizza per l'istaziazione di una classe, e' seguita dal metodo costruttore della classe;
+
+15- Che cos’è il camel case e che utilità ha in Java?
+Il  camel case e' una convenzione e notazione utilizzata in Java per la denominazione di variabili, classi etc. che utilizzano parole composte. 
+Cio' prevede che la prima lettera di ogni parola deve essere maiuscola es: nomeDiUnaVariabile, NomeDiUnaClasse, nomeDiUnMetodo.   
+
+16 - Cosa si intende con “indentazione”? Perché è importante?
+L'indentazione e' una convezione o stile di scrittura del codice. Un insieme di regole (su spazi e tabulazioni) che ordinano e raggruppano il codice 
+così da essere letto in modo scorrevole e intuitivo.
+
+17- A cosa serve un IDE?
+E' un ambiente di sviluppo (Software) che racchiude in un'unica interfaccia utente tutti gli strumenti necessari ad un programmatore di sviluppare 
+codice in modo efficiente.
+
+18- Come si scrive il nome di una classe? Come si scrive un costruttore?
+
+public class NomeClasse{ 
+	
+	public NomeClasse(){} //Costruttore
+}
+
+19- Che cos’è il costrutto if? A cosa serve?
+
+L'If e' un costrutto decisionale in grado di scegliere ed eseguire uno di blocchi di codici differenti in base al verificarsi o meno di una condizione
+
+20-  Che cos’è l’operatore ternario?
+L'operatore ternario e' un costrutto semplificato dell'If in grado di essere scritto con un'unica istruzzione. 
+
+21- Che cos’ è lo switch case?
+Lo switch case e' un costrutto condizionale in grado di raggruppare ed eseguire uno o piu blocchi di codice a seconda della verifica 
+di una condizione booleana.
+
+22- Spiega brevemente la differenza che c’è tra classe, oggetto e istanza.
+Classe: e' il costrutto per la rappresentazione astratta di oggetto nella realta'.
+Oggetto: e' la concretizzazione in memoria della Classe
+Istanza: e' processo da astratto a concreto mediante la keyword "new"
+
+23-  Descrivi la differenza tra passaggio “per valore” e passaggio “per riferimento” in Java
+Il passaggio per valore si utilizza per i tipi di dato primitivo;
+Il passaggio per riferimento si utilizza per i tipi di dato reference che "passa" un indirizzo di memore e non un valore. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
